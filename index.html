@@ -42,12 +42,14 @@
             <li class="nav-item">
               <a class="nav-link active p-4" aria-current="page" href="index.html">ገዛና</a>
             </li>
-            <a class="nav-link p-4" aria-current="page" href="about.html">ብዛዕባና</a>
+            <a class="nav-link p-4" aria-current="page" href="blog.html">BLOG</a>
             </li>
+            <!--
             <a class="nav-link p-4" aria-current="page" href="projects.html">ስርሓትና</a>
             </li>
             <a class="nav-link p-4" aria-current="page" href="pricing.html">ዋጋታትና</a>
             </li>
+            -->
             
           </ul>
           <a href="" class="my-cv">Connect With Us</a>
@@ -62,15 +64,15 @@
 
       <div class="row justify-content-center">
 
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="intro">
             <!--
             <p class="title">ንላለ</p>            
             -->
             <p class="hi">ሰላማት! 👋</p>
             <h1 class="my-name"><span>ቀንዴል </span> ንበሃል</h1>
-            <p class="slogun">ን ዉልቀ ሰባትን ትካላትን ዝኸዉን ድሕረ-ገጻት (websites) ነበልጽግ !</p>
-
+            <br>
+            <p class="slogun">ን ዉልቀ ሰባትን ትካላትን ዝኸዉን ድሕረ-ገጻት (websites) ነበልጽግ</p>
             <a href="#connectMe" class="homeBtn">ርኸቡና</a>
             <div class="social-media">
               <!--
@@ -82,8 +84,8 @@
           </div>
 
         </div>
-        <div class="col-md-6 pb-0 img">
-          <img src="img/myImage.png" alt="" srcset="">
+        <div class="col-md-4 pb-0 img">
+          <img src="img/kendel.png" alt="" srcset="">
         </div>
       </div>
 
@@ -148,27 +150,25 @@
 
         <div class="service-section">
           <div class="service">
-            <p>ንውልቀ ሰባት ምስ ነብሶምን ስርሖም መላለዪ ድሕረ ገጻት ንሰርሕ !</p>
+            <p>ንውልቀ ሰባት ምስ ነብሶምን ስርሖም መላለዪ ድሕረ ገጻት</p>
           </div>
 
         </div>
         <div class="service-section">
           <div class="service">
-            <p>ንትካላት ምስ ስርሖም / ኣገግልግሎታቶም መላለዪ ዝኸውን ድሕረ ገጻት ንሰርሕ!</p>
+            <p>ንትካላት ምስ ስርሖም / ኣገግልግሎታቶም መላለዪ ዝኸውን ድሕረ ገጻት</p>
           </div>
 
         </div>
         <div class="service-section">
           <div class="service">
-            <p>ብፍላይ ንውልቀ ሰባት ዝኸውን ኦንላይን ዕዳጋታት ንሰርሕ!
-            <p>
+            <p>ብፍላይ ንውልቀ ሰባት ዝኸውን ኦንላይን ዕዳጋታት<p>
           </div>
         </div>
 
         <div class="service-section">
           <div class="service">
-            <p>ከምኡ ውን ካልእ ዝተፈላለየ (Custom) ጠለባት !
-            <p>
+            <p>ከምኡ ውን ካልእ ዝተፈላለየ (Custom) ጠለባት (ከም ናይ ውልቂ ብሎግ ዌብ ሳይታት ዝኣመሰሉ)<p>
           </div>
         </div>
 
@@ -193,14 +193,9 @@
         <div class="row img-sec">
           <div class="col-md-6">
             <p class="para">
-              I'm Divya Kumari, a junior Web Designer with front-end development skills. I'm enthusiastic about using my
-              varied experiences to solve complex problems and craft enjoyable user experiences. My expertise lies in
-              web development, front-end web development, UI design, and SEO analytics.
+              We are passionate colleagues with a background in computer and data sciences, and Software development. Our mission is to make technology accessible and enjoyable for everyone. We love creating websites that are not only functional but also beautiful and easy to use. With our combined skills, we aim to bring your ideas to life and help you connect with your audience in meaningful ways.
               <br> <br>
-              I develop websites with HTML, CSS and JavaScript. I have top skills in using design softwares like Figma,
-              Adobe XD, and PhotoShop.
               <br> <br>
-
             </p>
             <br>
           </div>
@@ -228,22 +223,23 @@
                 <img src="./img/email.png" alt="email me"> &nbsp; &nbsp;
                 hieranambessajer@gmail.com</a>
             </div>
+            <!--
             <div class="social-media">
               <a href="https://www.linkedin.com/in/abiel-yacob-tommy/" target="_blank"><img
                   src="./img/LinkedIn Circled.png" alt="linkedin"></a>
               <a href="https://x.com/" target="_blank"> <img src="img/twt2.png" alt="twitter"></a>
-
             </div>
+            -->
 
           </div>
           <div class="col-md-6">
             <div class="form">
-              <form class="formSubmit" action="https://formsubmit.co/el/f5c2f5944e723b39e701dbaeba282c9d" method="POST">
-                <input type="text" placeholder="Full Name"><br>
-                <input type="email" placeholder="Email">
-                <input type="number" placeholder="Phone No."><br>
-                <textarea name="message" id="msg" placeholder="Message" cols="30" rows="10"></textarea><br>
-                <button class="button" type="submit">Send Message</button>
+              <form id="contact-form">
+                <input type="text" placeholder="Name" name="user_name" required /><br />
+                <input type="email" placeholder="Email" name="user_email" required />
+                <input type="number" placeholder="Phone No." name="user_phone" /><br />
+                <textarea name="message" id="msg" placeholder="Message" cols="30" rows="10" required></textarea><br />
+                <button type="submit">Send Message</button>
               </form>
             </div>
           </div>
@@ -259,7 +255,6 @@
   <button class="back-to-top" type="button"></button>
 
   <!--form script-->
-  <script src="./js/form.js"></script>
 
   <!-- jquiry -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -268,6 +263,9 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <!--custom js  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script src="./js/email.js"></script>
   <script src="js/script.js"></script>
 </body>
 

@@ -4,7 +4,7 @@ document.getElementById("year").innerHTML = year;
 
 
 // footer
-
+/*
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -48,6 +48,7 @@ class Footer extends HTMLElement {
         `;
   }
 }
+*/
 
 // customElements.define("main-header", Header);
 customElements.define("main-footer", Footer);
@@ -65,3 +66,5 @@ const toggleBtnBackToTop = () => {
 
 btnBackToTop.addEventListener('click', backToTop);
 window.addEventListener('scroll', toggleBtnBackToTop);
+
+

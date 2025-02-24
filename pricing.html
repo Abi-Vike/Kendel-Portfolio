@@ -181,21 +181,14 @@
             </div>
             <div class="col-md-6">
               <div class="form">
-                <form action="emailto:">
-                  <input type="text" placeholder="Full Name" /><br />
-                  <input type="email" placeholder="Email" />
-                  <input type="number" placeholder="Phone No." /><br />
-                  <textarea
-                    name="message"
-                    id="msg"
-                    placeholder="Message"
-                    cols="30"
-                    rows="10"
-                  ></textarea
-                  ><br />
+                <form id="contact-form">
+                  <input type="text" placeholder="Full Name" name="user_name" required /><br />
+                  <input type="email" placeholder="Email" name="user_email" required />
+                  <input type="number" placeholder="Phone No." name="phone" /><br />
+                  <textarea name="message" id="msg" placeholder="Message" cols="30" rows="10" required></textarea><br />
                   <button type="submit">Send Message</button>
                 </form>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
@@ -221,5 +214,6 @@
     <!--custom js  -->
     <script src="js/pricing.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </body>
 </html>
