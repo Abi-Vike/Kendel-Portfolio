@@ -747,12 +747,12 @@ ul {
   list-style: none;
 }
 
-.quike-links ul li {
+.quick-links ul li {
   margin-bottom: 25px;
 
 }
 
-.quike-links a:hover {
+.quick-links a:hover {
   color: #212121;
   text-decoration: underline;
 
