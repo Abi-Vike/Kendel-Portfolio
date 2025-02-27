@@ -3,8 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Content Manager</title>
+    <!-- Load the Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 3rem;
+        background: #FEF4F2;
+      }
+    </style>
   </head>
   <body>
+    <!-- This div displays the Identity menu (login/sign up options) -->
+    <div data-netlify-identity-menu></div>
+    
+    <!-- Alternatively, a simple button to trigger the widget:
+    <div data-netlify-identity-button>Login with Netlify Identity</div>
+    -->
+    
     <!-- Load Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </body>
