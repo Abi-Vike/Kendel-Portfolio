@@ -2,19 +2,20 @@ backend:
   name: git-gateway
   branch: Abiel
 
-publish_mode: editorial_workflow
-media_folder: "img/uploads"
+media_folder: "img/uploads"        # Folder where uploaded media will be stored
 public_folder: "/img/uploads"
+
+media_library:
+  name: uploadcare                 # Required media_library configuration (uploadcare is free for basic usage)
 
 collections:
   - name: "blog"
-    label: "Blog"
-    label_singular: "Post"
-    folder: "blog"
-    create: true
+    label: "Blog Posts"
+    folder: "blog"                 # Folder in your repo to store blog posts (make sure this folder exists)
+    create: true                   # Allow new posts to be created
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
