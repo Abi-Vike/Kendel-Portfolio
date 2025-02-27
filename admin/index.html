@@ -1,26 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Content Manager</title>
-    <!-- Load the Netlify Identity Widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <style>
-      body {
-        font-family: sans-serif;
-        text-align: center;
-        padding-top: 3rem;
-        background: #FEF4F2;
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  
+  <!-- Improved Identity handling -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+      
+      // Handle invite token from email
+      if (window.location.hash.includes('invite_token')) {
+        window.netlifyIdentity.on('login', user => {
+          window.netlifyIdentity.close();
+          window.location.reload();
+        });
       }
-    </style>
-  </head>
-  <body>
-    <!-- Identity Menu -->
-    <div data-netlify-identity-menu></div>
-    <!-- Or a button: -->
-    <!-- <div data-netlify-identity-button>Login with Netlify Identity</div> -->
-    
-    <!-- Load Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  </body>
+    }
+    window.netlifyIdentity.init();
+  </script>
+</body>
 </html>

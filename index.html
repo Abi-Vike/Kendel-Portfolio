@@ -201,5 +201,11 @@
   <script src="js/email.js"></script>
   <script src="js/includes.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    if (window.location.hostname === "localhost") {
+      localStorage.setItem('netlifySiteURL', 'https://stellar-stroopwafel-d15d71.netlify.app');
+    }
+  </script>
 </body>
 </html>

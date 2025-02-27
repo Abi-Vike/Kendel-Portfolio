@@ -1,24 +1,29 @@
 <!-- partials/header.html -->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Abi &amp; Heru</a>
-    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" 
-            type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="toggler-icon top-bar"></span>
-      <span class="toggler-icon middle-bar"></span>
-      <span class="toggler-icon bottom-bar"></span>
-    </button>
+    
     <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active p-4" aria-current="page" href="index.html">ገዛና</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link p-4" aria-current="page" href="blog.html">BLOG</a>
-        </li>
-        <!-- Uncomment the following links if needed -->
-        <!--
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Abi &amp; Heru</a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active p-4" aria-current="page" href="index.html">ገዛና</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-4" aria-current="page" href="blog.html">BLOG</a>
+                </li>
+                <!-- Uncomment the following links if needed -->
+                <!--
         <li class="nav-item">
           <a class="nav-link p-4" aria-current="page" href="projects.html">ስርሓትና</a>
         </li>
@@ -26,9 +31,16 @@
           <a class="nav-link p-4" aria-current="page" href="pricing.html">ዋጋታትና</a>
         </li>
         -->
+              </ul>
+              <a href="#" class="my-cv">Connect With Us</a>
+              <a href="/admin/" class="cms-link">Admin</a>
+              <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+            </div>
+          </div>
+        </nav>
       </ul>
-      <a href="#" class="my-cv">Connect With Us</a>
-      <a href="/admin/" class="cms-link">Admin</a>
+      <div data-netlify-identity-menu></div>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </div>
   </div>
 </nav>

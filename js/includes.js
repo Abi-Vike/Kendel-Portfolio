@@ -39,4 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
     .catch(error => console.error("Error loading footer:", error));
+
+    // Initialize Netlify Identity after header loads
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+    window.netlifyIdentity.init();
+  }
 });

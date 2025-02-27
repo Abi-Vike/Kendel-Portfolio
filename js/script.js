@@ -20,3 +20,17 @@ if (btnBackToTop) {
   btnBackToTop.addEventListener('click', backToTop);
   window.addEventListener('scroll', toggleBtnBackToTop);
 }
+
+// Add to existing script
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle logout
+  document.body.addEventListener('click', function(e) {
+    if (e.target.matches('[data-netlify-logout-button]')) {
+      e.preventDefault();
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.logout();
+        window.location.href = '/';
+      }
+    }
+  });
+});
