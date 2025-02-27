@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main  # Change this if your default branch is different
+  branch: Abiel  # Change this if your default branch is different
 
 media_folder: "img/uploads"        # Folder where uploaded media will be stored
 public_folder: "/img/uploads"
