@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon and Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
@@ -15,13 +13,11 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Satisfy&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Satisfy&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
   <title>Kendel | BLOG</title>
   <style>
-    /* Blog card styling to match your site's colors */
     .blog-card {
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 0.5rem;
@@ -29,153 +25,69 @@
       margin-bottom: 2rem;
       transition: transform 0.3s ease;
     }
-
     .blog-card:hover {
       transform: translateY(-5px);
     }
-
-    .blog-card .card-img-top {
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .continue-reading-btn {
-      background: linear-gradient(90deg, #F26C4F 0%, #F26C4F 81%);
-      border: none;
-      color: #fff;
-      border-radius: 20px;
-      padding: 0.5rem 1rem;
-      margin-top: 1rem;
-    }
-
-    .continue-reading-btn:hover {
-      background: linear-gradient(90deg, rgba(79, 1, 1, 1) 0%, rgba(242, 79, 79, 1) 81%);
+    .blog-card .card-body {
+      min-height: 150px;
     }
   </style>
 </head>
-
 <body>
-  <!-- Dynamic Header (loaded via js/includes.js) -->
+  <!-- Dynamic Header -->
   <main-header></main-header>
 
-  <!-- Spacer -->
-  <br><br>
-
-  <!-- Blog Section with Cards -->
-  <section id="blog" class="section">
-    <div class="container-fluid">
-      <!-- Section Headline -->
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="arrow">Good <span>Read</span></h1>
-          <p class="para">Explore our latest articles below.</p>
-        </div>
-      </div>
-      <br><br>
-      <!-- Blog Cards Row -->
-      <div class="row">
-        <!-- Blog Post Card 1 -->
-        <div class="col-md-4">
-          <div class="card blog-card">
-            <img src="img/blog1.jpg" class="card-img-top" alt="Blog Post 1">
-            <div class="card-body">
-              <h5 class="card-title">Entertainment</h5>
-              <p class="card-text truncate"
-                data-full-text="ዝግብኣካ ዕዮ ምዕያይ ግቡእ ሙዃኑ ኩሉ ሰብ ዚሰማምዓሉ ሓቒ እዩ ኣብ ዘይናትካ ወይ ድማ ኣብ ዘይግብኣካ ዕዮ ጣልቃ ምስ እትኣቱ ግና ኣዝዩ ኣዕናዊ ዚኾነ ውጽኢት እዩ ዘስዕብ እዚ ማለት እዝኒ ’’ኣነ ምርኣይ እዩ ስርሐይ’’ ኢላ ካብ ስርዓት ወጻኢ ናይ ዓይኒ ስራሕ ኽትሰርሕ ከም ምፍታን እዩ ብዝኾነ ይኹን መገዲ ግና ዘይከኣል እዩ። ኣቲ ነፍሰይ ትሰምዕኒ ‘ዶ ኣሎኺ ህድእ ኢልኪ እሞ ኣስተውዕሊ ንልብኺ መርምሪ ትሕት ምባል ዕዮኺ እዩ ልዕል ምባል ግና ናይ እግዚኣብሄር ግደ እዩ። ናይ ብዙሕ ግዜ ጸገምኪ እዚ እዩ ነፍሰይ፡ እዚ ጌጋ ድሕሪ ሎሚ ኣይደገም በጃኺ። ትሕት ምባል ክነሱ እቲ ቐንዲ ዕዮኺ ስለምንታይ ኢኺ ኣብ ዘይናትኪ ዕዮ ልዕል ክትብሊ እትጽዕሪ ልዕል ምባል ንእግዚኣብሄር ጥራሕ ዚምልከት እግዚኣብሄር ንዚደልዮ ዚህቦ ዕዮ እዩ። ንዓኺ ዚምልከት ዕዮ ድማ ትሕት ምባል ጥራይ እዩ። ስለዚ ነፍሰይ ዘዚምልከተና ዕዮ እንተዓየና ዚበለጸ ነገር እዩ ዚኸውን። ሓደ ተምሃራይ ኣብ ትምህርቱ ለይትን መዓልትን ዘጽንዕ እንተ ድኣ ኮይኑ ብሉጽ ነገር እዩ እዚ ይኹን እምበር ካብቶም መማህርቱ ጸብለል ኢሉ ኪወጽእ ዚገብሮ እግዚኣብሄር ልዕል ስለ ዘበሎ(ወይ ልዕና ስለ ዚሃቦ) ጥራይ እዩ መኽንያቱ ‘’ሰብ ብኹሉ ጻዕሩ ጽቡቕ ጻማ እንተ ረኣየ እዚውን ውህበት ኣምላኽ እዩ’’ ኣቲ ነፍሰይ ህድእ ኢልኪ እሞ ኣስተውዕሊ ልዕል ክትብሊ ምድላይን በቲ ዘሎኪ ዘይምዕጋብን ትዕቢት እዩ ስለዚ ተጠንቐቒ!!!! ደጊመ ክሕብረኪ ናትኪ ዕዮ ትሕት ምባል እምበር ልዕል ምባል ኣይኮነን ልዕል ክትብሊ እንተ ደሌኺ ግና መጀመርታ ክትገብርዮ ዚግብኣኪ ትሕት ምባል እዩ። መኽንያቱ ልዕል ምባል ኣብ ትሕትና ስለ ዚርከብ። ብዙሓት እቶም ንመምሃሪኺ ክኾኑ ተባሂሎም ኣብ ቃል ኣምላኽ ተጽሒፎም ዘለዉ እሞ ተዓዘብዮም ፡ ዝበዝሑ ካብኣቶም በዚ ነገር እዚ እዮም ፡ ዚወደቑ ነቲ ጀማሪ ሓጢኣት ኣብ ሰማይ ዚኾነ ሰይጣን እሞ ተዓዘብዮ ፡ ንሱ ኣብ ልዕሊ ኣምላኽ ልዕል ክብል ተመነየን መደብን ነገር ግና ናብ ምድሪ ተደርበየ። ሄዋን ነታ ንሓጢኣት ምኽንያት ዚኾነት ፍረ ኦም ንኽትበልዓ ዝደፋፍኣ ሓደ ነገር ዘረባ ሰይጣን ‘’ካብዚኣ ምስ እትበልዑ ከም ኣምላኽ ክትኮኑ ኢኹም’’ ስለ ዚበላ እዩ ሄዋን ከም ኣምላኽ ክትከውን ልዕሊ መጠን ስለ ዝተሃንጠየት ልዕልና ስለ ዚሃረፈት ንሓጢኣት ተቓልዐት በዚ መሰረት ልዕልና ዚብህግ ንሓጢያት ይቓላዕ እዩ መኽንያቱ ንህርፋን ረብሓ ዚተዋህበ ከምኡ እዩ ንሳ ንነፍሲ ዋናኣ ተጥፍኣ ነፍሰይ ከተስተውዕልዮ ዚግብኣኪ ልዕልና ብምብላዕክን ዘይምብላዕክን ኣይመጽእን እዩ። ኣደ ደቒ ዘብዴዎስ ንጎይታ የሱስ ኣብ መንግስትኻ ነዞም ደቐይ ሓደ ብየማንካ ሓደ ብጸጋምካ ግበረለይ ምስ በለቶ ሕራይ ኣይበላን መኽንያቱ ልዕልና ብልማኖ ውን ኣይመጽእን እዩ። ብኸመይ ድኣ……………………. ? ሓደ ጊዜ ግና ደቂ መዛሙርቱ ንየሱስ፡ መኖም ከም ዚዓቢ እንዳተኸራኸሩ እንከለዉ ጎይታ የሱስ ከምዚ በሎም፡ እቲ ቅድሚ ኩላትኩም ኪኸውን ዚደሊ ንሱ ድሕሪ ኩላትኩምን ግዙእ ኩሉኹምን ይኹን፡ ኣብዚ ቃል እምበኣር ልዕል ክትብል ብገዛእ ርእስኻ ምፍታን ዘይኮነ ዘድሊ፡ ልዕል ክትብል ምስ እትደሊ ትሕቲ ኩሉ ሙዃን ጥራይ እዩ እቲ መፍትሒ ስለዚ ዎ ነፍሰይ ኩሉ ግዜ ንዓኪ ትሕት ምባል ጥራይ እዩ ዚምልከተኪ ልዕል ምባል ድማ ናይ እግዚኣብሄር እዩ እሞ ደጊም ብጊዚኡ ልዕል ምእንቲ ኬብለኪ ኣብ ትሕቲ እታ ጽንዕቲ ኢድ ኣምላኽ ትሕት በሊ።">
-                Here is the summary for article 1...
-              </p>
-              <button class="btn continue-reading-btn" data-title="Article 1 Title"
-                data-content="ዝግብኣካ ዕዮ ምዕያይ ግቡእ ሙዃኑ ኩሉ ሰብ ዚሰማምዓሉ <br /><br />ሓቒ እዩ ኣብ ዘይናትካ ወይ ድማ ኣብ ዘይግብኣካ ዕዮ ጣልቃ ምስ እትኣቱ ግና ኣዝዩ ኣዕናዊ ዚኾነ ውጽኢት እዩ ዘስዕብ እዚ ማለት እዝኒ ’’ኣነ ምርኣይ እዩ ስርሐይ’’ ኢላ ካብ ስርዓት ወጻኢ ናይ ዓይኒ ስራሕ ኽትሰርሕ ከም ምፍታን እዩ ብዝኾነ ይኹን መገዲ ግና ዘይከኣል እዩ። <br /> ኣቲ ነፍሰይ ትሰምዕኒ ‘ዶ ኣሎኺ ህድእ ኢልኪ እሞ ኣስተውዕሊ ንልብኺ መርምሪ ትሕት ምባል ዕዮኺ እዩ ልዕል ምባል ግና ናይ እግዚኣብሄር ግደ እዩ። ናይ ብዙሕ ግዜ ጸገምኪ እዚ እዩ ነፍሰይ፡ እዚ ጌጋ ድሕሪ ሎሚ ኣይደገም በጃኺ። ትሕት ምባል ክነሱ እቲ ቐንዲ ዕዮኺ ስለምንታይ ኢኺ ኣብ ዘይናትኪ ዕዮ ልዕል ክትብሊ እትጽዕሪ ልዕል ምባል ንእግዚኣብሄር ጥራሕ ዚምልከት እግዚኣብሄር ንዚደልዮ ዚህቦ ዕዮ እዩ። ንዓኺ ዚምልከት ዕዮ ድማ ትሕት ምባል ጥራይ እዩ። ስለዚ ነፍሰይ ዘዚምልከተና ዕዮ እንተዓየና ዚበለጸ ነገር እዩ ዚኸውን። ሓደ ተምሃራይ ኣብ ትምህርቱ ለይትን መዓልትን ዘጽንዕ እንተ ድኣ ኮይኑ ብሉጽ ነገር እዩ እዚ ይኹን እምበር ካብቶም መማህርቱ ጸብለል ኢሉ ኪወጽእ ዚገብሮ እግዚኣብሄር ልዕል ስለ ዘበሎ(ወይ ልዕና ስለ ዚሃቦ) ጥራይ እዩ መኽንያቱ ‘’ሰብ ብኹሉ ጻዕሩ ጽቡቕ ጻማ እንተ ረኣየ እዚውን ውህበት ኣምላኽ እዩ’’ ኣቲ ነፍሰይ ህድእ ኢልኪ እሞ ኣስተውዕሊ ልዕል ክትብሊ ምድላይን በቲ ዘሎኪ ዘይምዕጋብን ትዕቢት እዩ ስለዚ ተጠንቐቒ!!!! ደጊመ ክሕብረኪ ናትኪ ዕዮ ትሕት ምባል እምበር ልዕል ምባል ኣይኮነን ልዕል ክትብሊ እንተ ደሌኺ ግና መጀመርታ ክትገብርዮ ዚግብኣኪ ትሕት ምባል እዩ። መኽንያቱ ልዕል ምባል ኣብ ትሕትና ስለ ዚርከብ። ብዙሓት እቶም ንመምሃሪኺ ክኾኑ ተባሂሎም ኣብ ቃል ኣምላኽ ተጽሒፎም ዘለዉ እሞ ተዓዘብዮም ፡ ዝበዝሑ ካብኣቶም በዚ ነገር እዚ እዮም ፡ ዚወደቑ ነቲ ጀማሪ ሓጢኣት ኣብ ሰማይ ዚኾነ ሰይጣን እሞ ተዓዘብዮ ፡ ንሱ ኣብ ልዕሊ ኣምላኽ ልዕል ክብል ተመነየን መደብን ነገር ግና ናብ ምድሪ ተደርበየ። ሄዋን ነታ ንሓጢኣት ምኽንያት ዚኾነት ፍረ ኦም ንኽትበልዓ ዝደፋፍኣ ሓደ ነገር ዘረባ ሰይጣን ‘’ካብዚኣ ምስ እትበልዑ ከም ኣምላኽ ክትኮኑ ኢኹም’’ ስለ ዚበላ እዩ ሄዋን ከም ኣምላኽ ክትከውን ልዕሊ መጠን ስለ ዝተሃንጠየት ልዕልና ስለ ዚሃረፈት ንሓጢኣት ተቓልዐት በዚ መሰረት ልዕልና ዚብህግ ንሓጢያት ይቓላዕ እዩ መኽንያቱ ንህርፋን ረብሓ ዚተዋህበ ከምኡ እዩ ንሳ ንነፍሲ ዋናኣ ተጥፍኣ ነፍሰይ ከተስተውዕልዮ ዚግብኣኪ ልዕልና ብምብላዕክን ዘይምብላዕክን ኣይመጽእን እዩ። ኣደ ደቒ ዘብዴዎስ ንጎይታ የሱስ ኣብ መንግስትኻ ነዞም ደቐይ ሓደ ብየማንካ ሓደ ብጸጋምካ ግበረለይ ምስ በለቶ ሕራይ ኣይበላን መኽንያቱ ልዕልና ብልማኖ ውን ኣይመጽእን እዩ። ብኸመይ ድኣ……………………. ? ሓደ ጊዜ ግና ደቂ መዛሙርቱ ንየሱስ፡ መኖም ከም ዚዓቢ እንዳተኸራኸሩ እንከለዉ ጎይታ የሱስ ከምዚ በሎም፡ እቲ ቅድሚ ኩላትኩም ኪኸውን ዚደሊ ንሱ ድሕሪ ኩላትኩምን ግዙእ ኩሉኹምን ይኹን፡ ኣብዚ ቃል እምበኣር ልዕል ክትብል ብገዛእ ርእስኻ ምፍታን ዘይኮነ ዘድሊ፡ ልዕል ክትብል ምስ እትደሊ ትሕቲ ኩሉ ሙዃን ጥራይ እዩ እቲ መፍትሒ ስለዚ ዎ ነፍሰይ ኩሉ ግዜ ንዓኪ ትሕት ምባል ጥራይ እዩ ዚምልከተኪ ልዕል ምባል ድማ ናይ እግዚኣብሄር እዩ እሞ ደጊም ብጊዚኡ ልዕል ምእንቲ ኬብለኪ ኣብ ትሕቲ እታ ጽንዕቲ ኢድ ኣምላኽ ትሕት በሊ።">
-                Continue Reading
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Blog Post Card 2 -->
-        <div class="col-md-4">
-          <div class="card blog-card">
-            <img src="img/blog2.jpg" class="card-img-top" alt="Blog Post 2">
-            <div class="card-body">
-              <h5 class="card-title">Sports</h5>
-              <p class="card-text truncate"
-                data-full-text="Here is the full content for article 2. It might include various insights and detailed descriptions. The user can click continue reading to view the complete article.">
-                Here is the summary for article 2...
-              </p>
-              <button class="btn continue-reading-btn" data-title="Article 2 Title"
-                data-content="Here is the full content for article 2. Replace this text with your actual blog post content.">
-                Continue Reading
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card blog-card">
-            <img src="img/blog2.jpg" class="card-img-top" alt="Blog Post 2">
-            <div class="card-body">
-              <h5 class="card-title">What's New</h5>
-              <p class="card-text truncate"
-                data-full-text="Here is the full content for article 2. It might include various insights and detailed descriptions. The user can click continue reading to view the complete article.">
-                Here is the summary for article 3...
-              </p>
-              <button class="btn continue-reading-btn" data-title="Article 2 Title"
-                data-content="Here is the full content for article 2. Replace this text with your actual blog post content.">
-                Continue Reading
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog Post Modal (Bootstrap 5) -->
-  <div class="modal fade" id="blogPostModal" tabindex="-1" aria-labelledby="blogPostModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header" style="background-color: #FEF4F2;">
-          <h5 class="modal-title" id="blogPostModalLabel">Blog Post Title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" style="background-color: #FEF4F2;">
-          <p id="blogPostContent">Full blog post content goes here...</p>
-        </div>
-      </div>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Our Blog Posts</h1>
+    <div id="blog-posts" class="row">
+      <!-- Blog posts will be injected here -->
     </div>
   </div>
 
-  <!-- Dynamic Footer (loaded via js/includes.js) -->
+  <!-- Firebase Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"></script>
+  <script src="js/firebase.js"></script>
+
+  <!-- Script to fetch and display posts -->
+  <script>
+    const blogPostsContainer = document.getElementById('blog-posts');
+    firestore.collection('blog').orderBy('date', 'desc').get()
+      .then(snapshot => {
+        snapshot.forEach(doc => {
+          const post = doc.data();
+          // Create a card for each post (you can adjust the card HTML as needed)
+          const card = document.createElement('div');
+          card.className = 'col-md-4';
+          card.innerHTML = `
+            <div class="card blog-card">
+              <div class="card-body">
+                <h5 class="card-title">${post.title}</h5>
+                <p class="card-text">${post.summary}</p>
+                <a href="#" class="btn btn-primary" onclick="showPost('${doc.id}')">Continue Reading</a>
+              </div>
+            </div>
+          `;
+          blogPostsContainer.appendChild(card);
+        });
+      })
+      .catch(err => console.error("Error fetching posts:", err));
+
+    function showPost(id) {
+      firestore.collection('blog').doc(id).get().then(doc => {
+        const post = doc.data();
+        alert("Full content:\n\n" + post.body); // For demo, simply alert. Replace with a modal if desired.
+      });
+    }
+  </script>
+
+  <!-- Dynamic Footer -->
   <main-footer></main-footer>
 
-  <!-- Back-to-top Button -->
-  <button class="back-to-top" type="button"></button>
-
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Includes -->
   <script src="js/includes.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    // Blog Modal Functionality
-    document.addEventListener("DOMContentLoaded", function () {
-      const readButtons = document.querySelectorAll(".continue-reading-btn");
-      readButtons.forEach(button => {
-        button.addEventListener("click", function () {
-          const title = this.getAttribute("data-title");
-          const content = this.getAttribute("data-content");
-
-          // Update modal content
-          document.getElementById("blogPostModalLabel").innerText = title;
-          document.getElementById("blogPostContent").innerText = content;
-
-          // Show modal using Bootstrap 5 Modal API
-          var modal = new bootstrap.Modal(document.getElementById("blogPostModal"));
-          modal.show();
-        });
-      });
-    });
-  </script>
 </body>
-
 </html>
